@@ -208,6 +208,13 @@ input::placeholder {
     }
 }
 
+@media (max-width: 425px) {
+.search-input {
+        max-width: 150px;
+        text-overflow: ellipsis;
+    }
+}
+
 @media (min-width: 769px) {
     .web-only {
         display: block;
