@@ -1,0 +1,31 @@
+<div class="card-container">
+    <div [ngClass]="{'card1': card == 'first', 'card2' : card === 'second' }">
+        <div class="card-header">
+            <div class="grid">
+                <span class="font-xsmall">Balance</span>
+                <span class="font-small">$5,756</span>
+            </div>
+            <div>
+                <img src="assets/card-chip.png" class="card-chip"/>
+            </div>
+        </div>
+        <div class="card-details">
+            <div class="grid">
+                <span class="font-xsmall">CARD HOLDER</span>
+                <span class="font-small">Eddy Cusuma</span>
+            </div>
+            <div class="grid">
+                <span class="font-xsmall">VALID THRU</span>
+                <span class="font-small">12/22</span>
+            </div>
+        </div>
+        <mat-divider></mat-divider>
+        <div [ngClass]="{'card-number1': card == 'first', 'card-number2' : card === 'second' }">
+            <div class="card-number">
+                <span>3778 **** **** 1234</span>
+                <span><i class='bx bxl-mastercard card-type'></i></span>
+            </div>
+        </div>
+        
+    </div>
+</div>

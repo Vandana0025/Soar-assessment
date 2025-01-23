@@ -1,0 +1,42 @@
+<div class="dashboard-container">
+    <main class="main-content">
+        <!-- Content Grid -->
+        <section class="content-grid">
+            <!-- My Cards -->
+            <div class="my-cards">
+                <div class="overview-headings">
+                    <span>My Cards</span>
+                    <span class="font-smaller">See All</span>
+                </div>
+                <div class="cards flex">
+                    <app-card-details [card]="'first'"></app-card-details>
+                    <app-card-details [card]="'second'"></app-card-details>
+                </div>
+            </div>
+
+            <!-- Recent Transactions -->
+            <div class="recent-transactions">
+                <div class="overview-headings">Recent Transactions</div>
+                <app-recent-transactions></app-recent-transactions>
+            </div>
+
+            <!-- Other Sections -->
+            <div class="weekly-activity">
+                <div class="overview-headings">Weekly Activity</div>
+                <div class="grid-item" id="chart1"></div>
+            </div>
+            <div class="expense-statistics">
+                <div class="overview-headings">Expense Statistics</div>
+                <div class="grid-item" id="chart2"></div>
+            </div>
+            <div class="quick-transfer">
+                <div class="overview-headings">Quick transfers</div>
+                <app-quick-transfer></app-quick-transfer>
+            </div>
+            <div class="balance-history">
+                <div class="overview-headings">Balance History</div>
+                <div class="grid-item" id="chart3"></div>
+            </div>
+        </section>
+    </main>
+</div>

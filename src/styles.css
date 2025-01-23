@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+ @import 'boxicons/css/boxicons.min.css';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Inter; background-color: #f5f7fa; }
+
+.font-small {
+    font-size: small;
+}
+
+.font-smaller {
+    font-size: 12px;
+}
+
+.font-xsmall {
+    font-size: x-small;
+}
+
+.font-medium {
+    font-size: medium;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.mat-mdc-tab .mdc-tab__text-label {
+    font-family: 'Inter' !important;
+}
+
+.mat-mdc-nav-list .mat-mdc-list-item:hover {
+    background-color: #fff !important;
+}
+
+.mat-drawer-transition .mat-drawer-content {
+    background: #F5F7FA;
+}
+
+.mat-mdc-nav-list .mat-mdc-list-item::before {
+    background: white !important;
+}
+
+.mat-mdc-tab .mdc-tab-indicator__content--underline {
+    border-color: black !important;
+}
+.mat-mdc-nav-list:hover {
+    font-weight: bold !important;
+}
+

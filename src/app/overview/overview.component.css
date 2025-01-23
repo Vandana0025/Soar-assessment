@@ -1,0 +1,107 @@
+.dashboard-container {
+    display: flex;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    background: #fff;
+    color: #000;
+    padding: 1rem;
+}
+
+.search-bar {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.search-bar input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.my-cards{
+    grid-column: span 8;
+}
+.recent-transactions {
+    grid-column: span 4;
+}
+
+.weekly-activity{
+    grid-column: span 8;
+}
+.expense-statistics {
+    grid-column: span 4;
+}
+
+.quick-transfer {
+    grid-column: span 4;
+}
+
+.balance-history {
+    grid-column: span 8;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .side-nav {
+        width: 100px;
+    }
+
+    .side-nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .my-cards,
+    .recent-transactions,
+    .weekly-activity,
+    .expense-statistics,
+    .quick-transfer,
+    .balance-history {
+        grid-column: span 12;
+    }
+}
+
+.grid-item {
+    height: 250px;
+    border-radius: 8px;
+    background: #fff;;
+}
+
+.flex {
+    display: flex;
+}
+
+.overview-headings {
+    font-size: small;
+    font-weight: bold;
+    justify-content: space-between;
+    color: #343C6A;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.cards{
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

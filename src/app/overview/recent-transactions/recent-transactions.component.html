@@ -1,0 +1,14 @@
+<div class="transaction-list">
+    <div class="transaction-item" *ngFor="let transaction of transactions">
+        <div class="icon" [ngStyle]="{'background-color': transaction.iconColor}">
+            <i [class]="transaction.iconClass"></i>
+        </div>
+        <div class="details">
+            <div class="font-small">{{ transaction.description }}</div>
+            <div class="date font-smaller">{{ transaction.date }}</div>
+        </div>
+        <div class="font-small" [ngClass]="{'positive': transaction.amount > 0, 'negative': transaction.amount < 0}">
+            {{ transaction.amount | currency }}
+        </div>
+    </div>
+</div>
