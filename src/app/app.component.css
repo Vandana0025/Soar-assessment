@@ -203,6 +203,9 @@ input::placeholder {
     .mobile-only {
         display: block;
     }
+   .logo-details {
+        padding: unset;
+    }
 }
 
 @media (min-width: 769px) {
